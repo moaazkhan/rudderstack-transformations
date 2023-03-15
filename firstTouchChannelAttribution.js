@@ -22,7 +22,6 @@ const communityRegex = new RegExp('community|Community|COMMUNITY');
 const notReferralPlatform = new RegExp('reddit|Reddit|Quora|quora|www.google|search.yahoo|duckduckgo|bing|yandex|www.baidu|search.seznam|facebook|instagram|twitter|linkedin|https://t.co');
 const referralRegex = new RegExp('referral|Referral|REFERRAL');
 
-
 //Influencer
 if(influencerRegex.test(event.traits.first_touch_utm_medium)){
     event.traits.first_touch_channel = "Influencer";
